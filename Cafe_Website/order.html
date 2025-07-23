@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Order</title>
+
+    <style>
+      body{
+        background: #febbb0;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin:0;
+        padding:0;
+      }
+
+      .header_section {
+        background-color: #ff5759;
+        display: flex;
+        justify-content: space-between;
+        color: #000000;
+        padding: 10px 20px;
+        text-align: left;
+      }
+
+      .header_section h1 {
+        display: flex;
+        text-align: left;
+        font-size: 2em;
+        margin: 0;
+      }
+      
+
+      .header_section .icons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+      }
+      .header_section .icons a {
+        color: #000000;
+        font-size: 1.5em;
+        margin-top: auto;
+      }
+      .Liked:hover i {
+        color: rgb(255, 255, 255);
+      }
+      .Shopping_cart:hover i {
+        color: rgb(255, 255, 255);
+      }
+      .icons i {
+        transition: color 0.3s ease;
+      }
+      .menu-header {
+        text-align: center;
+        margin: 20px 0;
+      }
+      .menu-list {
+        color: #000000;
+        padding: 20px;
+        text-align: left;
+      }
+      .menu-list h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+      }
+
+.coffee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.coffee-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px;
+}
+
+.coffee-card img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.coffee-card h2 {
+  font-size: 1.2em;
+  margin: 0 0 5px 0;
+  color: #333;
+  text-align: left;
+}
+
+.coffee-card p {
+  font-size: 1em;
+  margin: 3px 0;
+  text-align: left;
+}
+
+.coffee-card p:last-child {
+  font-weight: bold;
+  color: #ff5759;
+}
+
+.order-button {
+  margin-top: auto;
+  background-color: #ff5759;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  align-self: center;
+  margin-top: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+  background-color: #ff3b3d;
+}
+
+.like-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #bbb;
+  background: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.like-icon:hover {
+  transform: scale(1.2);
+  color: red;
+}
+
+    </style>
+  </head>
+
+  <body>
+    <header class="header_section">
+      <h1>Order Here!!!</h1>
+      <div class="icons">
+        <a href="#" target="_blank" class="Liked"><i class="fas fa-heart icon"></i></a>
+        <a href="#" target="_blank" class="Shopping_cart"><i class="fas fa-shopping-cart icon"></i></a>
+      </div>
+    </header>
+
+    <!-- Coffee Section -->
+    <main class="menu-list">
+      <div class="menu-header">
+        <h1>Hot and Cold Beverages</h1>
+      </div>
+
+      <div class="coffee-grid">
+
+        <div class = "coffee-card">
+          <div class="'image-container">
+            <img src="Images/coffe1.png" alt="Coffee 1">
+            <i class="fas fa-heart like-icon"></i>
+          </div>
+            <h2>Espresso</h2>
+            <p>Rich and bold espresso shot.</p>
+            <p>Price: $3.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+
+        <div class = "coffee-card">
+          <div class="'image-container">
+            <img src="Images/coffe2.png" alt="Coffee 1">
+            <i class="fas fa-heart like-icon"></i>
+          </div>
+            <h2>Espresso</h2>
+            <p>Rich and bold espresso shot.</p>
+            <p>Price: $3.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+
+        <div class = "coffee-card">
+          <div class="'image-container">
+            <img src="Images/coffe3.png" alt="Coffee 1">
+            <i class="fas fa-heart like-icon"></i>
+          </div>
+            <h2>Espresso</h2>
+            <p>Rich and bold espresso shot.</p>
+            <p>Price: $3.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+
+        <div class = "coffee-card">
+          <div class="'image-container">
+            <img src="Images/coffe4.png" alt="Coffee 1">
+            <i class="fas fa-heart like-icon"></i>
+          </div>
+            <h2>Espresso</h2>
+            <p>Rich and bold espresso shot.</p>
+            <p>Price: $3.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+
+        <div class = "coffee-card">
+          <div class="'image-container">
+            <img src="Images/coffe5.png" alt="Coffee 1">
+            <i class="fas fa-heart like-icon"></i>
+          </div>
+            <h2>Espresso</h2>
+            <p>Rich and bold espresso shot.</p>
+            <p>Price: $3.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Sandwhich Section -->
+    <main class="menu-list">
+      <div class="menu-header">
+        <h1>Sandwhich</h1>
+      </div>
+
+      <div class="coffee-grid">
+
+        <div class = "coffee-card">
+          <div class="'image-container">
+            <img src="Images/sandwhich_bg1.png" alt="Coffee 1">
+            <i class="fas fa-heart like-icon"></i>
+          </div>
+            <h2>Grilled Cheese Sandwhich</h2>
+            <p>Fresh Vegetables</p>
+            <p>Price: $3.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+
+        <div class = "coffee-card">
+          <div class="'image-container">
+            <img src="Images/sandwhich_bg2.png" alt="Coffee 1">
+            <i class="fas fa-heart like-icon"></i>
+          </div>
+            <h2>Turkey Club Sandwhich</h2>
+            <p>Using special sauces.</p>
+            <p>Price: $3.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+
+        <div class = "coffee-card">
+          <div class="'image-container">
+            <img src="Images/sandwhich_bg3.png" alt="Coffee 1">
+            <i class="fas fa-heart like-icon"></i>
+          </div>
+            <h2>Grilled Sandwhich</h2>
+            <p>Rich and tasty .</p>
+            <p>Price: $3.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+
+        <div class = "coffee-card">
+          <div class="'image-container">
+            <img src="Images/salad1.jpeg" alt="Coffee 1">
+            <i class="fas fa-heart like-icon"></i>
+          </div>
+            <h2>Avacado Toast</h2>
+            <p>Rich and tasty .</p>
+            <p>Price: $3.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+
+        <div class = "coffee-card">
+          <div class="'image-container">
+            <img src="Images/salad2.jpeg" alt="Coffee 1">
+            <i class="fas fa-heart like-icon"></i>
+          </div>
+            <h2>Toast</h2>
+            <p>Rich and tasty .</p>
+            <p>Price: $3.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Dessert Section -->
+    <main class="menu-list">
+      <div class="menu-header">
+        <h1>Dessert</h1>
+      </div>
+
+      <div class="coffee-grid">
+
+        <div class = "coffee-card">
+          <div class="'image-container">
+            <img src="Images/cupcake_bg1.jpg" alt="Coffee 1">
+            <i class="fas fa-heart like-icon"></i>
+          </div>
+            <h2>Cherry falvoured cupcake</h2>
+            <p>Fresh </p>
+            <p>Price: $3.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+
+        <div class = "coffee-card">
+          <div class="'image-container">
+            <img src="Images/cupcake_bg2.jpeg" alt="Coffee 1">
+            <i class="fas fa-heart like-icon"></i>
+          </div>
+            <h2>Vanilla Falvoured cupcake</h2>
+            <p>Eyeseeking toppings</p>
+            <p>Price: $3.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+
+        <div class = "coffee-card">
+          <div class="'image-container">
+            <img src="Images/pastrey1.jpg" alt="Coffee 1">
+            <i class="fas fa-heart like-icon"></i>
+          </div>
+            <h2>Vanilla Falvoured cupcake</h2>
+            <p>Eyeseeking toppings</p>
+            <p>Price: $3.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+
+        <div class = "coffee-card">
+          <div class="'image-container">
+            <img src="Images/pastrey2.jpg" alt="Coffee 1">
+            <i class="fas fa-heart like-icon"></i>
+          </div>
+            <h2>Vanilla Falvoured cupcake</h2>
+            <p>Eyeseeking toppings</p>
+            <p>Price: $3.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+
+        <div class = "coffee-card">
+          <div class="'image-container">
+            <img src="Images/pastrey3.webp" alt="Coffee 1">
+            <i class="fas fa-heart like-icon"></i>
+          </div>
+            <h2>Vanilla Falvoured cupcake</h2>
+            <p>Eyeseeking tongs</p>
+            <p>Price: $3.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+      </div>
+    </main>
+
+  </body>
+
+
+  
+
+</html>

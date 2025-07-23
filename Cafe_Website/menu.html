@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Menu</title>
+        <style>
+            body{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                background-color: #ffb07c;
+                margin: 0;
+                padding: 5px;
+            }
+
+            .menu-list {
+                background-color: #481F01;
+                color: #ffffff;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .menu-section {
+                padding: 60px 20px;
+                text-align: left;
+            }
+
+            .menu-section h1 {
+                font-size: 3em;
+                color: #481F01;
+                margin-bottom: 40px;
+            }
+
+            .menu-grid {
+                display: flex;
+                justify-content: center;
+                gap: 100px;
+                flex-wrap: wrap;
+            }
+
+            .menu-card {
+                width: 800px;
+                height: 500px;
+                background-size: cover;
+                background-position: center;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: #000000;
+                font-weight: bold;
+                font-size: 1.5em;
+                position: relative;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+                transition: transform 0.3s ease;
+            }
+
+            .menu-card:hover {
+                transform: scale(1.05);
+            }
+
+            .menu-card .emoji {
+                font-size: 2.5em;
+                margin-bottom: 10px;
+            }
+
+            .menu-card.coffee {
+                background-image: url('Images/Menu_Coffee_Card_bg.png'); /* coffee beans etc. */
+            }
+
+            .menu-card.dessert {
+                background-image: url('Images/Menu_Cupcake_Card.png'); /* cupcakes */
+            }
+
+            .menu-card.snacks {
+                background-image: url('Images/Menu_sandwhich_Card.png'); /* sandwiches */
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <header class=" menu-list ">
+            <h1>  Our Cafe Menu </h1>
+        </header>
+        
+        <section class="menu-section">
+            <div class="menu-grid">
+                <div class="menu-card coffee">
+                    <h2>Coffee</h2>
+                    <p>Freshly brewed classics, lattes, and seasonal flavors.</p>
+                    <img src="Images/Menu_Coffee_Card_bg.png" alt="Coffee Background" style="display:none;">
+                    <ul>
+                        <li>Espresso</li>
+                        <li>Latte</li>
+                        <li>Cappuccino</li>
+                        <li>Mocha</li>
+                        <li>Hazelnut Vanilla Twist</li>
+                        <li>Spicy Cinnamon Espresso</li>
+                        <li>Midnight Mocha Magic</li>
+                        <li>Caramel Macchiato</li>
+                        <li>Vanilla Bean Latte</li>
+                    </ul>
+                </div>
+            
+                <div class="menu-card dessert">
+                    <h2>Dessert</h2>
+                    <img src="Images/Menu_Cupcake_Card.png" alt="Dessert Background" style="display:none;">
+                    <p>Indulge in our sweet treats, from cupcakes to pastries.</p>
+                    <ul>
+                        <li>Chocolate Cupcake</li>
+                        <li>Red Velvet Cake</li>
+                        <li>Cheesecake</li>
+                        <li>Fruit Tart</li>
+                        <li>Chocolate Croissant</li>
+                        <li>Banana Bread</li>
+                        <li>Apple Pie</li>
+                        <li>Brownies</li>
+                        <li>Cookies</li>
+                    </ul>
+                </div>
+    
+                <div class="menu-card snacks">
+                    <h2>Snacks</h2>
+                    <img src="Images/Menu_sandwhich_Card.png" alt="Snacks Background" style="display:none;">
+                    <p>Perfect pairings for your coffee, from sandwiches to salads.</p>
+                    <ul>
+                        <li>Grilled Cheese Sandwich</li>
+                        <li>Turkey Club Sandwich</li>
+                        <li>Caesar Salad</li>
+                        <li>Caprese Salad</li>
+                        <li>Avocado Toast</li>
+                        <li>Hummus and Veggies</li>
+                        <li>Bagel with Cream Cheese</li>
+                        <li>Spinach and Feta Wrap</li>
+                        <li>Quiche</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+    </body>
+
+    
+</html>

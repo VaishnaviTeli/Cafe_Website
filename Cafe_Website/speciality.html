@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Speciality</title>
+
+    <style>
+        body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #a7837d;
+    margin: 0;
+    padding: 5px;
+}
+
+header h1 {
+    background-color: #481F01;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    font-size: 2.2em;
+    margin-top: 15px;
+}
+
+.table-coffee {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* ✅ Responsive Coffee Grid */
+.coffee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.coffee-card {
+    text-align: center;
+}
+
+.coffee-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border: 8px solid #371c04;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+}
+
+.coffee-card h2 {
+    font-size: 18px;
+    background-color: #481F01;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 0 0 10px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.coffee-card h2:hover {
+    color: #000000;
+    background-color: #f2f1e8;
+}
+
+.Come_as_your p {
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 10px;
+}
+
+.footer {
+    background-color: #481F01;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: #481F01;
+    background: #f2f1e8;
+    padding: 12px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    background-color: #481F01;
+    color: #fff;
+}
+
+.social-icons .whatsapp:hover {
+    background-color: #25D366;
+}
+
+.social-icons .instagram:hover {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+
+.social-icons .facebook:hover {
+    background-color: #1877F2;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    header h1 {
+        font-size: 2em;
+        padding: 15px;
+    }
+
+    .coffee-card h2 {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .coffee-grid {
+        gap: 20px;
+        padding: 15px;
+    }
+}
+    </style>
+
+    <body>
+        <header class="header">
+            <h1> Our Specialty </h1>
+        </header>
+
+        <main class="table-coffee">
+            <div class="coffee-grid">
+                <div class="coffee-card">
+                    <img src="Images/coffe1.png" alt="Coffee 1">
+                    <h2>Hazelnut Vanilla Twist </h2>
+                </div>
+                <div class="coffee-card">
+                    <img src="Images/coffe2.png" alt="Coffee 2">
+                    <h2>Spicy Cinnamon Espresso</h2>
+                </div>
+                <div class="coffee-card">
+                    <img src="Images/coffe3.png" alt="Coffee 3">
+                    <h2>Midnight Mocha Magic</h2>
+                </div>
+                <div class="coffee-card">
+                    <img src="Images/coffe4.png" alt="Coffee 4">
+                    <h2>Caramel Cloud Latte</h2>
+                </div>
+                <div class="coffee-card">
+                    <img src="Images/coffe5.png" alt="Coffee 5">
+                    <h2>Americano</h2>
+                </div>
+                <div class="coffee-card">
+                    <img src="Images/coffe6.png" alt="Coffee 6">
+                    <h2>Mocha</h2>
+                </div>
+            </div>
+        </main>
+
+        <main class="art_on_coffee">
+            <h1>Art on Coffee</h1>
+            <div class="coffee-grid">
+                <div class="coffee-card">
+                    <img src="Images/artoncup1.jpeg" alt="Latte Art 1">
+                </div>
+                <div class="coffee-card">
+                    <img src="Images/artoncup2.jpeg" alt="Latte Art 2">
+                </div>
+                <div class="coffee-card">
+                    <img src="Images/artoncup3.jpeg" alt="Latte Art 3">
+                </div>
+                <div class="coffee-card">
+                    <img src="Images/artoncup4.jpeg" alt="Latte Art 4">
+                </div>
+            </div>
+        </main>
+
+        <main class="Come_as_your">
+            <h1>Come as you are</h1>
+            <p>Whether you're looking for a cozy corner to work alone, planning a
+                romantic coffee date, or just want to spend quality time
+                with family — Mine Cafe is your space.
+                Warm vibes, friendly faces, and cups full of comfort await you.</p>
+
+            <div class="coffee-grid">
+                <div class="coffee-card">
+                    <img src="Images/1person.jpeg" alt="Come as you are 1">
+                </div>
+                <div class="coffee-card">
+                    <img src="Images/2person.jpeg" alt="Come as you are 2">
+                </div>
+                <div class="coffee-card">
+                    <img src="Images/family.jpeg" alt="Come as you are 3">
+                </div>
+                <div class="coffee-card">
+                    <img src="Images/friends.jpeg" alt="Come as you are 4">
+                </div>
+            </div>
+        </main>
+
+        <section class="footer">
+            <div class="footer-container">
+                <p>&copy; 2023 Have a Bite. All rights reserved.</p>
+                <p>Follow us on social media for the latest updates!</p>
+                <div class="social-icons">
+                        <a href="#" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </section>
+    </body>
+
+</html>
